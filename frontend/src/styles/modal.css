@@ -1,0 +1,106 @@
+
+.modalparent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background: #1e1e1e;
+    border-radius: 15px;
+    height: 70%;
+    width: 50%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  .modalheader {
+    display: flex;
+    justify-content: end;
+    height: 60px;
+    border-bottom: 1px solid #fff;
+    align-items: center;
+  }
+  
+  .modalheader .closeicon {
+    color: #fff;
+    margin-right: 5px;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .buttons{
+    display: grid;
+    row-gap: 15px;
+    place-items: center;
+    margin-top: 20px;
+  }
+  .buttons button {
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #dadada;
+    border: none;
+  }
+  @media screen and (max-width: 900px) {
+    .modal {
+      height: 90%;
+      width: 90%;
+    }
+  }
+  .modaltext{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 25px;
+  }
+  .modalword{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+  .helpword{
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-style: italic;
+  }
+  .flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .ncr label {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 20px;
+  }
+  .save{
+    margin-top: 20px;
+    padding: 10px 40px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+  }
+  .toogleicon {
+    color: #fff;
+    font-size: 30px;
+  }

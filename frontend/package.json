@@ -1,0 +1,40 @@
+{
+  "name": "amwordle",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "host": "vite --host"
+  },
+  "dependencies": {
+    "axios": "^1.6.3",
+    "base-64": "^1.0.0",
+    "base32": "^0.0.7",
+    "classnames": "^2.3.2",
+    "crypto-js": "^4.2.0",
+    "react": "^18.2.0",
+    "react-cookie": "^7.0.1",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-loader-spinner": "^6.1.6",
+    "react-router": "^6.20.0",
+    "react-router-dom": "^6.20.0",
+    "react-select": "^5.8.0",
+    "use-screenshot-hook": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.2.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "vite": "^5.0.0"
+  }
+}
