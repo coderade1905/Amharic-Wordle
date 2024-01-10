@@ -5,7 +5,7 @@ import { rcContext } from "../App";
 import Win from "./win";
 import Help from "./help";
 import Settings from "./settings";
-import { useParams } from "react-router";
+import { useSearchParams } from "react-router-dom";
 import { decrypt } from "./encryption";
 
 function Box() {
@@ -29,11 +29,11 @@ function Box() {
 function Home() {
     const {row, column, setRow, setColumn, columns, rows, wordState, setWordState, word, setDcolor, evk, choice, hohe, setHohe, setEvk, setChoice, already, setAlready, setModal, win, setWin, top, setTop, cookies, setWord} = useContext(rcContext);
     const imgRef = useRef(null);
-    const {givenword} = useParams();
+    const [givenword, setGivenWord] = useSearchParams();
     useEffect(() => {
-        if (givenword)
+        if (givenword.get('givenword'))
         {
-            setWord(decrypt(givenword));
+            setWord(decrypt(givenword.get('givenword')));
         }
     }, [])
     const handleKeyDown = (event) => {

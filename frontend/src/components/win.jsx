@@ -39,7 +39,7 @@ function Win({imgRef})
                     <p className="modalword">ትርጉም : <a href={meaning} style={{textDecoration: "none", color: "#aaf"}}>Click to see meaning</a></p>
                     <div className="buttons">
                         <button onClick={() => {navigate(0)}}>አዲስ ጨዋታ</button>
-                        <CopyToClipboard text={"http://amwordle.rf.gd/"+encrypt(word)}
+                        <CopyToClipboard text={"http://amwordle.rf.gd?givenword="+encrypt(word)}
                         onCopy={() => alert("copied")}>
                             <button>የዚህን ጨዋታ ሊንክ ኮፒ ያድርጉ</button>
                         </CopyToClipboard>
