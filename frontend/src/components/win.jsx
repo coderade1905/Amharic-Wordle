@@ -3,7 +3,7 @@ import "../styles/modal.css";
 import { useContext } from "react";
 import { rcContext } from "../App";
 import { useNavigate } from "react-router";
-import { useScreenshot } from "use-screenshot-hook";
+import {useScreenshot} from "usescreenshot-react";
 import { encrypt } from "./encryption";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
@@ -11,7 +11,7 @@ function Win({imgRef})
 {
     const {modal, setModal, word, win} = useContext(rcContext);
     const toggle = () => setModal(!modal);
-    const { image, takeScreenshot } = useScreenshot({ref: imgRef});
+    const {takeScreenshot} = useScreenshot();
     const navigate = useNavigate();
     const download = (image, { name = 'amwordlegame', extension = 'png' } = {}) => {
         const a = document.createElement('a');

@@ -17,7 +17,7 @@ function Box() {
         c = [];
         for (let j = 0; j < columns; j++)
         {
-            c.push(<input type="text" disabled className="column" style={{backgroundColor : dcolor[i][j]}} key={j} value={wordState[i][j]}></input>)
+            c.push(<div className="column" style={{backgroundColor : dcolor[i][j]}} key={j}>{wordState[i][j]}</div>)
         }
         r.push(<div className="row" key={i}>{c}</div>)
     }
