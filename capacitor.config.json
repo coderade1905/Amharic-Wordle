@@ -1,0 +1,6 @@
+{
+  "appId": "com.amwordle.amwordle",
+  "appName": "Amharic Wordle",
+  "bundledWebRuntime": false,
+  "npmClient": "npm"
+}
