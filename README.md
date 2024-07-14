@@ -1,1 +1,1 @@
-amwordle.rf.gd
+http://amwordle.rf.gd
